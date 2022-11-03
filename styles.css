@@ -1,3 +1,11 @@
+/* * {
+    font-family: 'Bebas Neue', cursive;
+} */
+
+.container-custom {
+    max-width: 1440px !important;
+}
+
 .wrapper {
     display: block;
     width: 100%;
@@ -40,6 +48,7 @@
 .header-overview-details-wrap-title-and-info-text-title {
     font-size: 54px;
     font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
     color: #1D4288;
     line-height: 48px;
 }
@@ -77,20 +86,24 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
 .filter-option {
     width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px;
     background-color: #EFEFEF;
+    margin: 8px 0;
     margin-right: 8px;
     border-radius: 20px;
     transition: all 0.4s;
+    cursor: pointer;
 }
 
 .text-filter-option {
@@ -100,9 +113,459 @@
 }
 
 .wrap-border-badge {
-    width: 340px;
+    width: fit-content;
     height: 140px;
     border-radius: 11px;
-    border: 1px solid #1d1d1d;
-    padding: 8px
+    border: 1px solid #1D4288;
+    padding: 2px;
+    box-sizing: border-box
+}
+
+.wrap-badge {
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+    background-color: #1D4288;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 16px
+}
+
+.wrap-badge-title {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.badge-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.badge-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.wrap-featured-tire-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-tire-title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1D4288
+}
+
+.list-featured-tire-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.featured-tire-card {
+    position: relative;
+    min-width: 450px;
+    min-height: 640px;
+}
+
+.featured-tire-card-footer {
+    width: 100%;
+    background-color: #EFEFEF;
+    border: 1px solid #1D4288;
+    min-height: 180px;
+    border-top: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 12px 12px 12px;
+}
+
+.featured-tire-card-footer .pricing {
+    font-size: 48px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    color: #1D4288;
+    text-align: center;
+}
+
+.featured-tire-card-footer .available-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-tire-card-footer .available-data span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1D4288;
+    margin-left: 5px;
+}
+
+.featured-tire-card-footer .mail-in-rebate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-tire-card-footer .mail-in-rebate span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff5349;
+    margin-left: 5px;
+}
+
+.featured-tire-card-footer button {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-weight: 700;
+    background-color: #1D4288;
+    width: 100%;
+    border: none;
+    color: white;
+}
+
+.featured-tire-card:hover .featured-tire-card-not-choose {
+    display: none;
+}
+
+.featured-tire-card:hover .featured-tire-card-choose {
+    display: flex;
+}
+
+.featured-tire-card:hover .featured-tire-card-detail {
+    border-radius: 0;
+}
+
+.featured-tire-card-not-choose {
+    display: block;
+    width: 100%;
+    height: 44px;
+}
+
+.featured-tire-card-choose {
+    display: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #3EB049;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #1D4288;
+    border-bottom: none;
+}
+
+.featured-tire-card-choose span {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    margin-left: 9px;
+}
+
+.featured-tire-card-detail {
+    width: 100%;
+    border: 1px solid #1D4288;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.featured-tire-card-detail-overview-option {
+    width: 100%;
+    display: flex;
+}
+
+.featured-tire-card-detail-overview-option-badge {
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.featured-tire-card-detail-overview-option-badge-save {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ff5349;
+    color: white;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+
+.featured-tire-card-detail-overview-option-badge-right {
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+
+.featured-tire-card-detail-overview-option-detail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-tire-card-detail-overview-option-detail img {
+    margin-bottom: 5px;
+    margin-top: 33px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-brand {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    color: #1D4288;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-type {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D4288;
+    line-height: 20px;
+}
+
+.featured-tire-card-detail-overview-option-detail .warranty-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D4288;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status img {
+    margin: 0 4px !important;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D4288;
+    line-height: 20px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .rating-number {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .wrap-rating-list-star {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .wrap-rating-list-star .star-rating {
+    margin: 0;
+}
+
+.featured-tire-card-detail-overview-option-badge div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.featured-tire-card-detail-overview-option-badge div span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1D4288;
+}
+
+.advertising-badge {
+    width: 100%;
+    margin: 32px 0;
+    background-color: #1D4288;
+    border-radius: 8px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertising-badge .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 40px;
+    color: white;
+}
+
+.advertising-badge .sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    color: white;
+}
+
+.wrap-list-tire-result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-list-tire-result .header-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-list-tire-result .header-options .filter {
+    min-width: 220px;
+    min-height: 40px;
+    border: 1px solid #1D4288;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.wrap-list-tire-result .header-options .filter span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D4288;
+    margin-right: 4px
+}
+
+.wrap-list-tire-result .list-result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result {
+    width: 100%;
+    min-height: 226px;
+    border: 1px solid #1D4288;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-image {
+    width: 30%;
+    border-right: 1px solid #1D4288;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-right: 1px solid #1D4288;
+    padding: 23px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col .wrap-rating {
+    width: fit-content;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col .weather-status {
+    margin-top: 9px;
+    width: fit-content;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-pricing {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 0;
+    background-color: #EFEFEF;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-pricing .featured-tire-card-footer{
+    border: none;
 }
