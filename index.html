@@ -35,8 +35,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="wrapper">
-        <div class="header-overview">
-            <div class="container-custom container header-overview-details">
+        <div class="side-bar" id="side-bar">
+            sdfkljsabflskadjf
+        </div>
+        <section class="header-overview">
+            <div class="container-custom container w-100-fl-row">
                 <div class="header-overview-details-wrap-image">
                     <!-- Set avatar car header at here -->
                     <img src="https://static.wixstatic.com/media/b4dcef_12ef96a6a8464ff0897f838e5d72ebf8~mv2.png/v1/fill/w_640,h_380,al_c,q_95,enc_auto/toyota-raize-3-3.png"
@@ -45,19 +48,19 @@
                 <div class="header-overview-details-wrap-title-and-info">
                     <span class="header-overview-details-wrap-title-and-info-text-title">{{number}} TIRES FOR
                         {{nameCar}}</span>
-                    <div class="header-overview-details-wrap-title-and-info--wrap-text-subtile">
+                    <div class="w-100-fl-row">
                         <span class="header-overview-details-wrap-title-and-info-text-subtile">{{type}}</span>
                         <span class="header-overview-details-wrap-title-and-info-text-subtile">{{type}} &#x2022;
                             {{tireInch}} Wheel</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="wrap-body">
+        </section>
+        <section class="wrap-body">
             <div class="container-custom container">
-                <div class="wrap-option">
+                <div class="w-100-fl-row row-space-between">
                     <div class="wrap-list-filter-option">
-                        <span class="filter-option">
+                        <span class="filter-option" id="filter-btn">
                             <img src="assets/filter.svg" alt="filter" />
                             <span class="text-filter-option">
                                 Filter
@@ -112,11 +115,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrap-featured-tire-section">
+                <div class="w-100-fl-column">
                     <span class="featured-tire-title">
                         Features Tires
                     </span>
-                    <div class="list-featured-tire-card">
+                    <div class="w-100-fl-row list-featured-tire-card">
                         <!-- mapping tire card -->
                         <div class="featured-tire-card">
                             <!-- S-POINT pick is choose -->
@@ -148,7 +151,7 @@
                                             {{tire-type}}
                                         </span>
                                         <!-- Display tire rating number -->
-                                        <div class="wrap-rating">
+                                        <div class="wrap-rating w-100-fl-row">
                                             <div class="wrap-rating-list-star">
                                                 <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
                                                 <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
@@ -160,7 +163,7 @@
                                             <span class="rating-number">4.0 (14)</span>
                                         </div>
                                         <!-- Display weather status -->
-                                        <div class="weather-status">
+                                        <div class="weather-status w-100-fl-row">
                                             <img src="assets/weather.svg" alt="">
                                             <span>All weather</span>
                                             <img src="assets/info-icon.svg" alt="">
@@ -186,169 +189,11 @@
                                     $320.97 EA.
                                 </span>
                                 <!-- Available date --->
-                                <div class="available-data">
+                                <div class="available-data w-100-fl-row">
                                     <img src="assets/tick.svg" alt="tick">
                                     <span>Available 05/07</span>
                                 </div>
-                                <div class="mail-in-rebate">
-                                    <img src="assets/special.svg" alt="special">
-                                    <span>Mail-in rebate of $75</span>
-                                </div>
-                                <button onclick="">ADD TO CART</button>
-                            </div>
-                        </div>
-                        <div class="featured-tire-card">
-                            <!-- S-POINT pick is choose -->
-                            <div class="featured-tire-card-choose">
-                                <img src="assets/pointS-logo.svg" alt="pointS">
-                                <span>
-                                    POINT-S PICK
-                                </span>
-                            </div>
-                            <div class="featured-tire-card-not-choose"></div>
-                            <div class="featured-tire-card-detail">
-                                <div class="featured-tire-card-detail-overview-option">
-                                    <div class="featured-tire-card-detail-overview-option-badge">
-                                        <!-- Display discount -->
-                                        <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                            $100</span>
-                                    </div>
-                                    <div class="featured-tire-card-detail-overview-option-detail">
-                                        <!-- Display tire image -->
-                                        <img src="assets/tires.png" alt="tires" />
-                                        <!-- Display tire-brand image -->
-                                        <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                        <!-- Display tire name -->
-                                        <span class="tire-name">
-                                            {{tire-name}}
-                                        </span>
-                                        <!-- Display tire type -->
-                                        <span class="tire-type">
-                                            {{tire-type}}
-                                        </span>
-                                        <!-- Display tire rating number -->
-                                        <div class="wrap-rating">
-                                            <div class="wrap-rating-list-star">
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-without-color.svg" alt="star"
-                                                    class="star-rating" />
-                                            </div>
-                                            <span class="rating-number">4.0 (14)</span>
-                                        </div>
-                                        <!-- Display weather status -->
-                                        <div class="weather-status">
-                                            <img src="assets/weather.svg" alt="">
-                                            <span>All weather</span>
-                                            <img src="assets/info-icon.svg" alt="">
-                                        </div>
-                                        <!-- Display tire warranty number -->
-                                        <span class="warranty-number">
-                                            {{number}} Mile warranty
-                                        </span>
-                                    </div>
-                                    <!-- Onclick to compare -->
-                                    <div
-                                        class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                        <div>
-                                            <img src="assets/compare-plus.svg" alt="" srcset="">
-                                            <span>Compare</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="featured-tire-card-footer">
-                                <!-- Pricing --->
-                                <span class="pricing">
-                                    $320.97 EA.
-                                </span>
-                                <!-- Available date --->
-                                <div class="available-data">
-                                    <img src="assets/tick.svg" alt="tick">
-                                    <span>Available 05/07</span>
-                                </div>
-                                <div class="mail-in-rebate">
-                                    <img src="assets/special.svg" alt="special">
-                                    <span>Mail-in rebate of $75</span>
-                                </div>
-                                <button onclick="">ADD TO CART</button>
-                            </div>
-                        </div>
-                        <div class="featured-tire-card">
-                            <!-- S-POINT pick is choose -->
-                            <div class="featured-tire-card-choose">
-                                <img src="assets/pointS-logo.svg" alt="pointS">
-                                <span>
-                                    POINT-S PICK
-                                </span>
-                            </div>
-                            <div class="featured-tire-card-not-choose"></div>
-                            <div class="featured-tire-card-detail">
-                                <div class="featured-tire-card-detail-overview-option">
-                                    <div class="featured-tire-card-detail-overview-option-badge">
-                                        <!-- Display discount -->
-                                        <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                            $100</span>
-                                    </div>
-                                    <div class="featured-tire-card-detail-overview-option-detail">
-                                        <!-- Display tire image -->
-                                        <img src="assets/tires.png" alt="tires" />
-                                        <!-- Display tire-brand image -->
-                                        <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                        <!-- Display tire name -->
-                                        <span class="tire-name">
-                                            {{tire-name}}
-                                        </span>
-                                        <!-- Display tire type -->
-                                        <span class="tire-type">
-                                            {{tire-type}}
-                                        </span>
-                                        <!-- Display tire rating number -->
-                                        <div class="wrap-rating">
-                                            <div class="wrap-rating-list-star">
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                                <img src="assets/star-without-color.svg" alt="star"
-                                                    class="star-rating" />
-                                            </div>
-                                            <span class="rating-number">4.0 (14)</span>
-                                        </div>
-                                        <!-- Display weather status -->
-                                        <div class="weather-status">
-                                            <img src="assets/weather.svg" alt="">
-                                            <span>All weather</span>
-                                            <img src="assets/info-icon.svg" alt="">
-                                        </div>
-                                        <!-- Display tire warranty number -->
-                                        <span class="warranty-number">
-                                            {{number}} Mile warranty
-                                        </span>
-                                    </div>
-                                    <!-- Onclick to compare -->
-                                    <div
-                                        class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                        <div>
-                                            <img src="assets/compare-plus.svg" alt="" srcset="">
-                                            <span>Compare</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="featured-tire-card-footer">
-                                <!-- Pricing --->
-                                <span class="pricing">
-                                    $320.97 EA.
-                                </span>
-                                <!-- Available date --->
-                                <div class="available-data">
-                                    <img src="assets/tick.svg" alt="tick">
-                                    <span>Available 05/07</span>
-                                </div>
-                                <div class="mail-in-rebate">
+                                <div class="mail-in-rebate w-100-fl-row">
                                     <img src="assets/special.svg" alt="special">
                                     <span>Mail-in rebate of $75</span>
                                 </div>
@@ -362,8 +207,8 @@
                     <span class="title">Maecenas faucibus mollis interdum.</span>
                     <span class="sub-title">Learn more about financing</span>
                 </div>
-                <div class="wrap-list-tire-result">
-                    <div class="header-options">
+                <div class="wrap-list-tire-result w-100-fl-column">
+                    <div class="header-options w-100-fl-row">
                         <span class="featured-tire-title">{{number}} Tire Result</span>
                         <div class="filter">
                             <span>Sorted by:</span>
@@ -371,7 +216,7 @@
                             <img src="assets/arrow-down.svg" alt="arrow">
                         </div>
                     </div>
-                    <div class="list-result">
+                    <div class="list-result w-100-fl-column">
                         <div class="wrap-result">
                             <div class="wrap-image">
                                 <div class="featured-tire-card-detail-overview-option-badge">
@@ -400,7 +245,7 @@
                                         {{tire-type}}
                                     </span>
                                     <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
+                                    <div class="wrap-rating w-100-fl-row">
                                         <div class="wrap-rating-list-star">
                                             <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
                                             <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
@@ -413,7 +258,7 @@
                                 </div>
                                 <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
                                     <!-- Display weather status -->
-                                    <div class="weather-status">
+                                    <div class="weather-status w-100-fl-row">
                                         <img src="assets/weather.svg" alt="">
                                         <span>All weather</span>
                                         <img src="assets/info-icon.svg" alt="">
@@ -423,387 +268,7 @@
                                         {{number}} Mile warranty
                                     </span>
                                     <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <span>Black sidewall</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-pricing">
-                                <div class="featured-tire-card-footer">
-                                    <!-- Pricing --->
-                                    <span class="pricing">
-                                        $320.97 EA.
-                                    </span>
-                                    <!-- Available date --->
-                                    <div class="available-data">
-                                        <img src="assets/tick.svg" alt="tick">
-                                        <span>Available 05/07</span>
-                                    </div>
-                                    <div class="mail-in-rebate">
-                                        <img src="assets/special.svg" alt="special">
-                                        <span>Mail-in rebate of $75</span>
-                                    </div>
-                                    <button onclick="">ADD TO CART</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-result">
-                            <div class="wrap-image">
-                                <div class="featured-tire-card-detail-overview-option-badge">
-                                    <!-- Display discount -->
-                                    <!-- <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                        $100</span> -->
-                                </div>
-                                <img src="assets/tires.png" alt="tires" />
-                                <div
-                                    class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                    <div>
-                                        <img src="assets/compare-plus.svg" alt="" srcset="">
-                                        <span>Compare</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-detail">
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                    <!-- Display tire name -->
-                                    <span class="tire-name">
-                                        {{tire-name}}
-                                    </span>
-                                    <!-- Display tire type -->
-                                    <span class="tire-type">
-                                        {{tire-type}}
-                                    </span>
-                                    <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
-                                        <div class="wrap-rating-list-star">
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-without-color.svg" alt="star" class="star-rating" />
-                                        </div>
-                                        <span class="rating-number">4.0 (14)</span>
-                                    </div>
-                                </div>
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <img src="assets/weather.svg" alt="">
-                                        <span>All weather</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                    <!-- Display tire warranty number -->
-                                    <span class="warranty-number">
-                                        {{number}} Mile warranty
-                                    </span>
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <span>Black sidewall</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-pricing">
-                                <div class="featured-tire-card-footer">
-                                    <!-- Pricing --->
-                                    <span class="pricing">
-                                        $320.97 EA.
-                                    </span>
-                                    <!-- Available date --->
-                                    <div class="available-data">
-                                        <img src="assets/tick.svg" alt="tick">
-                                        <span>Available 05/07</span>
-                                    </div>
-                                    <div class="mail-in-rebate">
-                                        <img src="assets/special.svg" alt="special">
-                                        <span>Mail-in rebate of $75</span>
-                                    </div>
-                                    <button onclick="">ADD TO CART</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-result">
-                            <div class="wrap-image">
-                                <div class="featured-tire-card-detail-overview-option-badge">
-                                    <!-- Display discount -->
-                                    <!-- <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                        $100</span> -->
-                                </div>
-                                <img src="assets/tires.png" alt="tires" />
-                                <div
-                                    class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                    <div>
-                                        <img src="assets/compare-plus.svg" alt="" srcset="">
-                                        <span>Compare</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-detail">
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                    <!-- Display tire name -->
-                                    <span class="tire-name">
-                                        {{tire-name}}
-                                    </span>
-                                    <!-- Display tire type -->
-                                    <span class="tire-type">
-                                        {{tire-type}}
-                                    </span>
-                                    <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
-                                        <div class="wrap-rating-list-star">
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-without-color.svg" alt="star" class="star-rating" />
-                                        </div>
-                                        <span class="rating-number">4.0 (14)</span>
-                                    </div>
-                                </div>
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <img src="assets/weather.svg" alt="">
-                                        <span>All weather</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                    <!-- Display tire warranty number -->
-                                    <span class="warranty-number">
-                                        {{number}} Mile warranty
-                                    </span>
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <span>Black sidewall</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-pricing">
-                                <div class="featured-tire-card-footer">
-                                    <!-- Pricing --->
-                                    <span class="pricing">
-                                        $320.97 EA.
-                                    </span>
-                                    <!-- Available date --->
-                                    <div class="available-data">
-                                        <img src="assets/tick.svg" alt="tick">
-                                        <span>Available 05/07</span>
-                                    </div>
-                                    <div class="mail-in-rebate">
-                                        <img src="assets/special.svg" alt="special">
-                                        <span>Mail-in rebate of $75</span>
-                                    </div>
-                                    <button onclick="">ADD TO CART</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-result">
-                            <div class="wrap-image">
-                                <div class="featured-tire-card-detail-overview-option-badge">
-                                    <!-- Display discount -->
-                                    <!-- <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                        $100</span> -->
-                                </div>
-                                <img src="assets/tires.png" alt="tires" />
-                                <div
-                                    class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                    <div>
-                                        <img src="assets/compare-plus.svg" alt="" srcset="">
-                                        <span>Compare</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-detail">
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                    <!-- Display tire name -->
-                                    <span class="tire-name">
-                                        {{tire-name}}
-                                    </span>
-                                    <!-- Display tire type -->
-                                    <span class="tire-type">
-                                        {{tire-type}}
-                                    </span>
-                                    <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
-                                        <div class="wrap-rating-list-star">
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-without-color.svg" alt="star" class="star-rating" />
-                                        </div>
-                                        <span class="rating-number">4.0 (14)</span>
-                                    </div>
-                                </div>
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <img src="assets/weather.svg" alt="">
-                                        <span>All weather</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                    <!-- Display tire warranty number -->
-                                    <span class="warranty-number">
-                                        {{number}} Mile warranty
-                                    </span>
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <span>Black sidewall</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-pricing">
-                                <div class="featured-tire-card-footer">
-                                    <!-- Pricing --->
-                                    <span class="pricing">
-                                        $320.97 EA.
-                                    </span>
-                                    <!-- Available date --->
-                                    <div class="available-data">
-                                        <img src="assets/tick.svg" alt="tick">
-                                        <span>Available 05/07</span>
-                                    </div>
-                                    <div class="mail-in-rebate">
-                                        <img src="assets/special.svg" alt="special">
-                                        <span>Mail-in rebate of $75</span>
-                                    </div>
-                                    <button onclick="">ADD TO CART</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-result">
-                            <div class="wrap-image">
-                                <div class="featured-tire-card-detail-overview-option-badge">
-                                    <!-- Display discount -->
-                                    <!-- <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                        $100</span> -->
-                                </div>
-                                <img src="assets/tires.png" alt="tires" />
-                                <div
-                                    class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                    <div>
-                                        <img src="assets/compare-plus.svg" alt="" srcset="">
-                                        <span>Compare</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-detail">
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                    <!-- Display tire name -->
-                                    <span class="tire-name">
-                                        {{tire-name}}
-                                    </span>
-                                    <!-- Display tire type -->
-                                    <span class="tire-type">
-                                        {{tire-type}}
-                                    </span>
-                                    <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
-                                        <div class="wrap-rating-list-star">
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-without-color.svg" alt="star" class="star-rating" />
-                                        </div>
-                                        <span class="rating-number">4.0 (14)</span>
-                                    </div>
-                                </div>
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <img src="assets/weather.svg" alt="">
-                                        <span>All weather</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                    <!-- Display tire warranty number -->
-                                    <span class="warranty-number">
-                                        {{number}} Mile warranty
-                                    </span>
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <span>Black sidewall</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-pricing">
-                                <div class="featured-tire-card-footer">
-                                    <!-- Pricing --->
-                                    <span class="pricing">
-                                        $320.97 EA.
-                                    </span>
-                                    <!-- Available date --->
-                                    <div class="available-data">
-                                        <img src="assets/tick.svg" alt="tick">
-                                        <span>Available 05/07</span>
-                                    </div>
-                                    <div class="mail-in-rebate">
-                                        <img src="assets/special.svg" alt="special">
-                                        <span>Mail-in rebate of $75</span>
-                                    </div>
-                                    <button onclick="">ADD TO CART</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-result">
-                            <div class="wrap-image">
-                                <div class="featured-tire-card-detail-overview-option-badge">
-                                    <!-- Display discount -->
-                                    <!-- <span class="featured-tire-card-detail-overview-option-badge-save">Save
-                                        $100</span> -->
-                                </div>
-                                <img src="assets/tires.png" alt="tires" />
-                                <div
-                                    class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
-                                    <div>
-                                        <img src="assets/compare-plus.svg" alt="" srcset="">
-                                        <span>Compare</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-detail">
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <img src="assets/tire-name.png" alt="tires-brand" class="tire-brand" />
-                                    <!-- Display tire name -->
-                                    <span class="tire-name">
-                                        {{tire-name}}
-                                    </span>
-                                    <!-- Display tire type -->
-                                    <span class="tire-type">
-                                        {{tire-type}}
-                                    </span>
-                                    <!-- Display tire rating number -->
-                                    <div class="wrap-rating">
-                                        <div class="wrap-rating-list-star">
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-full-color.svg" alt="star" class="star-rating" />
-                                            <img src="assets/star-without-color.svg" alt="star" class="star-rating" />
-                                        </div>
-                                        <span class="rating-number">4.0 (14)</span>
-                                    </div>
-                                </div>
-                                <div class="featured-tire-card-detail-overview-option-detail wrap-detail-col">
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
-                                        <img src="assets/weather.svg" alt="">
-                                        <span>All weather</span>
-                                        <img src="assets/info-icon.svg" alt="">
-                                    </div>
-                                    <!-- Display tire warranty number -->
-                                    <span class="warranty-number">
-                                        {{number}} Mile warranty
-                                    </span>
-                                    <!-- Display weather status -->
-                                    <div class="weather-status">
+                                    <div class="weather-status w-100-fl-row">
                                         <span>Black sidewall</span>
                                         <img src="assets/info-icon.svg" alt="">
                                     </div>
@@ -830,11 +295,130 @@
                         </div>
                     </div>
                 </div>
+                <button class="wrap-more-btn">
+                    SEE MORE
+                </button>
             </div>
-        </div>
+        </section>
+        <section class="wrap-current-tire-specials">
+            <div class="container-custom container">
+                <div class="wrap-title w-100-fl-row">
+                    <span class="featured-tire-title">
+                        Features Tires
+                    </span>
+                    <a href="" class="sub-title">See All Specials</a>
+                </div>
+                <div class="wrap-image w-100-fl-row">
+                    <div class="img-adv">
+                        <img src="assets/070122_Hankook_100Rebate_Banner_690x273 1.png" alt="img">
+                    </div>
+                    <div class="img-adv">
+                        <img src="assets/FsMay-JulyPromo22_US_NonCFNA 1.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-custom container wrap-info-detail">
+            <div class="wrap-info-detail">
+                <div class="wrap-side">
+                    <img src="assets/Store Associate Services Outside_6 4.png" alt="">
+                </div>
+                <div class="wrap-side">
+                    <div class="big-title">
+                        <span>Not finding what you’re looking for? We can help.</span>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="info-detail">
+                        <span class="big-title">
+                            Gill’s Point S Tire & Auto - Raleigh Hills
+                        </span>
+                        <div class="wrap-information">
+                            <div class="info-col info-right-col">
+                                <span class="phone-info">
+                                    503-244-9912
+                                </span>
+                                <span class="after-hours-services phone-info">
+                                    After hours services
+                                </span>
+                                <span class="after-hours-services phone-info">
+                                    503-244-9912
+                                </span>
+
+                                <span class="mt-18">
+                                    5125 SW Beaverton
+                                </span>
+                                <span>Hillsdale Hwy.</span>
+                                <span>Porland, OR 97221.</span>
+                                <a href="" class="mt-9">Location information</a>
+                                <a href="" class="mt-9">Get Direction</a>
+                            </div>
+                            <div class="info-col info-left-col">
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Mon
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Tues
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Wed
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Thur
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text display-without-opacity">
+                                    <span class="info-col w-30">
+                                        Fri
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Sat
+                                    </span>
+                                    <span class="info-col w-70">
+                                        Closed
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text">
+                                    <span class="info-col w-30">
+                                        Sun
+                                    </span>
+                                    <span class="info-col w-70">
+                                        Closed
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <script src="" async defer></script>
+    <script src="index.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>
