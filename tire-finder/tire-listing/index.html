@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../components/make-appoint-footer/index.css" />
+    <link rel="stylesheet" href="../../components/make-appoint-header/index.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css"
+        type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+</head>
+
+<body>
+
+    <!-- Set overlay and sidebar-->
+    <div class="overlay"></div>
+    <div class="side-bar" id="side-bar">
+        <div class="header-side-bar w-100-fl-row">
+            <span class="header-title">
+                ALL FILTER
+            </span>
+            <img src="../../assets/Close.svg" alt="close" id="close-filter-btn">
+        </div>
+        <div class="w-100-fl-column">
+            <div class="wrap-side-bar-filter-option w-100-fl-row">
+                <span class="wrap-side-bar-filter-option-title">
+                    NEED IT BY
+                </span>
+                <img src="../../assets/arrow-blue.svg" alt="arrow" class="filter-icon" id="need-it-by-filter">
+            </div>
+            <div class="need-it-by-filter-option w-100-fl-row">
+                <div class="cursor-circle" id="need-it-by-cursor">
+                    <div class="green-point"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-side-bar-filter-option w-100-fl-row">
+            <span class="wrap-side-bar-filter-option-title">
+                PRICE
+            </span>
+            <img src="../../assets/arrow-blue.svg" alt="arrow" class="filter-icon" id="price-filter">
+        </div>
+    </div>
+    <!-- End overlay and sidebar-->
+
+    <!-- Make appoint header section -->
+    <div class="make-appoint-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <section class="left-section d-flex">
+                <div class="icon-wrapper">
+                    <img src="../../assets/Group 26.svg" height="48" width="183" />
+                </div>
+            </section>
+
+            <section class="right-section">
+                <div class="controller-wrapper d-flex">
+                    <span><a href="#">Need help?</a> Call shop at 503-244-9912</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- End make appoint header section -->
+
+    <div class="wrapper">
+        <section class="header-overview">
+            <div class="container-custom container w-100-fl-row">
+                <div class="header-overview-details-wrap-image">
+                    <!-- Set avatar car header at here -->
+                    <img src="https://static.wixstatic.com/media/b4dcef_12ef96a6a8464ff0897f838e5d72ebf8~mv2.png/v1/fill/w_640,h_380,al_c,q_95,enc_auto/toyota-raize-3-3.png"
+                        alt="car" width="100%">
+                </div>
+                <div class="header-overview-details-wrap-title-and-info">
+                    <span class="header-overview-details-wrap-title-and-info-text-title">{{number}} TIRES FOR
+                        {{nameCar}}</span>
+                    <div class="w-100-fl-row">
+                        <span class="header-overview-details-wrap-title-and-info-text-subtile">{{type}}</span>
+                        <span class="header-overview-details-wrap-title-and-info-text-subtile">{{type}} &#x2022;
+                            {{tireInch}} Wheel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrap-body">
+            <div class="container-custom container">
+                <div class="w-100-fl-row row-space-between">
+                    <div class="wrap-list-filter-option">
+                        <span class="filter-option" id="filter-btn">
+                            <img src="../../assets/filter.svg" alt="filter" />
+                            <span class="text-filter-option">
+                                Filter
+                            </span>
+                        </span>
+                        <span class="filter-option">
+                            <img src="../../assets/special.svg" alt="filter" />
+                            <span class="text-filter-option">
+                                Specials
+                            </span>
+                        </span>
+                        <span class="filter-option">
+                            <img src="../../assets/need-it-buy.svg" alt="need-it-buy" />
+                            <span class="text-filter-option">
+                                Need it buy
+                            </span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow-down" />
+                        </span>
+                        <span class="filter-option">
+                            <span class="text-filter-option">
+                                Price
+                            </span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow-down" />
+
+                        </span>
+                        <span class="filter-option">
+                            <span class="text-filter-option">
+                                Tire type
+                            </span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow-down" />
+                        </span>
+                        <span class="filter-option">
+                            <span class="text-filter-option">
+                                More
+                            </span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow-down" />
+                        </span>
+                        <span class="filter-option">
+                            <span class="text-filter-option">
+                                Brand
+                            </span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow-down" />
+                        </span>
+                    </div>
+                    <div class="wrap-border-badge">
+                        <div class="wrap-badge">
+                            <img src="../../assets/let-us-find-the-best-match.svg" alt="tire" width="50px" />
+                            <div class="wrap-badge-title">
+                                <span class="badge-title">LET US FIND THE BEST MATCH</span>
+                                <span class="badge-subtitle">Tell us about your ride and needs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100-fl-column">
+                    <span class="featured-tire-title">
+                        Features Tires
+                    </span>
+                    <div class="w-100-fl-row list-featured-tire-card">
+                        <!-- mapping tire card -->
+                        <div class="featured-tire-card">
+                            <!-- S-POINT pick is choose -->
+                            <div class="featured-tire-card-choose">
+                                <img src="../../assets/pointS-logo.svg" alt="pointS">
+                                <span>
+                                    POINT-S PICK
+                                </span>
+                            </div>
+                            <div class="featured-tire-card-not-choose"></div>
+                            <div class="featured-tire-card-detail">
+                                <div class="featured-tire-card-detail-overview-option">
+                                    <div class="featured-tire-card-detail-overview-option-badge">
+                                        <!-- Display discount -->
+                                        <span class="featured-tire-card-detail-overview-option-badge-save">Save
+                                            $100</span>
+                                    </div>
+                                    <div class="featured-tire-card-detail-overview-option-detail">
+                                        <!-- Display tire image -->
+                                        <img src="../../assets/tires.png" alt="tires" />
+                                        <!-- Display tire-brand image -->
+                                        <img src="../../assets/tire-name.png" alt="tires-brand" class="tire-brand" />
+                                        <!-- Display tire name -->
+                                        <span class="tire-name">
+                                            {{tire-name}}
+                                        </span>
+                                        <!-- Display tire type -->
+                                        <span class="tire-type">
+                                            {{tire-type}}
+                                        </span>
+                                        <!-- Display tire rating number -->
+                                        <div class="wrap-rating w-100-fl-row">
+                                            <div class="wrap-rating-list-star">
+                                                <img src="../../assets/star-full-color.svg" alt="star"
+                                                    class="star-rating" />
+                                                <img src="../../assets/star-full-color.svg" alt="star"
+                                                    class="star-rating" />
+                                                <img src="../../assets/star-full-color.svg" alt="star"
+                                                    class="star-rating" />
+                                                <img src="../../assets/star-full-color.svg" alt="star"
+                                                    class="star-rating" />
+                                                <img src="../../assets/star-without-color.svg" alt="star"
+                                                    class="star-rating" />
+                                            </div>
+                                            <span class="rating-number">4.0 (14)</span>
+                                        </div>
+                                        <!-- Display weather status -->
+                                        <div class="weather-status w-100-fl-row">
+                                            <img src="../../assets/weather.svg" alt="">
+                                            <span>All weather</span>
+                                            <img src="../../assets/info-icon.svg" alt="">
+                                        </div>
+                                        <!-- Display tire warranty number -->
+                                        <span class="warranty-number">
+                                            {{number}} Mile warranty
+                                        </span>
+                                    </div>
+                                    <!-- Onclick to compare -->
+                                    <div
+                                        class="featured-tire-card-detail-overview-option-badge featured-tire-card-detail-overview-option-badge-right">
+                                        <div>
+                                            <img src="../../assets/compare-plus.svg" alt="" srcset="">
+                                            <span>Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-tire-card-footer">
+                                <!-- Pricing --->
+                                <span class="pricing">
+                                    $320.97 EA.
+                                </span>
+                                <!-- Available date --->
+                                <div class="available-data w-100-fl-row">
+                                    <img src="../../assets/tick.svg" alt="tick">
+                                    <span>Available 05/07</span>
+                                </div>
+                                <div class="mail-in-rebate w-100-fl-row">
+                                    <img src="../../assets/special.svg" alt="special">
+                                    <span>Mail-in rebate of $75</span>
+                                </div>
+                                <button onclick="">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertising-badge">
+                    <img src="../../assets/koalafi-logo.svg">
+                    <span class="title">Maecenas faucibus mollis interdum.</span>
+                    <span class="sub-title">Learn more about financing</span>
+                </div>
+                <div class="wrap-list-tire-result w-100-fl-column">
+                    <div class="header-options w-100-fl-row">
+                        <span class="featured-tire-title" id="number-result-found">Tire Result</span>
+                        <div class="filter">
+                            <span>Sorted by:</span>
+                            <span>Best Seller</span>
+                            <img src="../../assets/arrow-down.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div id="list-tire-result" class="list-result w-100-fl-column">
+                        <!--List result item-->
+                    </div>
+                </div>
+                <button class="wrap-more-btn" id="see-more-result-btn">
+                    SEE MORE
+                </button>
+            </div>
+        </section>
+        <section class="wrap-current-tire-specials">
+            <div class="container-custom container">
+                <div class="wrap-title w-100-fl-row">
+                    <span class="featured-tire-title">
+                        Features Tires
+                    </span>
+                    <a href="" class="sub-title">See All Specials</a>
+                </div>
+                <div class="wrap-image w-100-fl-row">
+                    <div class="img-adv">
+                        <img src="../../assets/070122_Hankook_100Rebate_Banner_690x273 1.png" alt="img">
+                    </div>
+                    <div class="img-adv">
+                        <img src="../../assets/FsMay-JulyPromo22_US_NonCFNA 1.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-custom container wrap-info-detail">
+            <div class="wrap-info-detail">
+                <div class="wrap-side">
+                    <img src="../../assets/Store Associate Services Outside_61 4.png" alt="">
+                </div>
+                <div class="wrap-side">
+                    <div class="big-title">
+                        <span>Not finding what you’re looking for? We can help.</span>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="info-detail">
+                        <span class="big-title">
+                            Gill’s Point S Tire & Auto - Raleigh Hills
+                        </span>
+                        <div class="wrap-information">
+                            <div class="info-col info-right-col">
+                                <span class="phone-info">
+                                    503-244-9912
+                                </span>
+                                <span class="after-hours-services phone-info">
+                                    After hours services
+                                </span>
+                                <span class="after-hours-services phone-info">
+                                    503-244-9912
+                                </span>
+
+                                <span class="mt-18">
+                                    5125 SW Beaverton
+                                </span>
+                                <span>Hillsdale Hwy.</span>
+                                <span>Porland, OR 97221.</span>
+                                <a href="" class="mt-9">Location information</a>
+                                <a href="" class="mt-9">Get Direction</a>
+                            </div>
+                            <div class="info-col info-left-col">
+                                <div class="w-100-fl-row blur-text" id="mon">
+                                    <span class="info-col w-30">
+                                        Mon
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="tue">
+                                    <span class="info-col w-30">
+                                        Tues
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="wed">
+                                    <span class="info-col w-30">
+                                        Wed
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="thur">
+                                    <span class="info-col w-30">
+                                        Thur
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="fri">
+                                    <span class="info-col w-30">
+                                        Fri
+                                    </span>
+                                    <span class="info-col w-70">
+                                        8:00am - 5:00pm
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="sat">
+                                    <span class="info-col w-30">
+                                        Sat
+                                    </span>
+                                    <span class="info-col w-70">
+                                        Closed
+                                    </span>
+                                </div>
+                                <div class="w-100-fl-row blur-text" id="sun">
+                                    <span class="info-col w-30">
+                                        Sun
+                                    </span>
+                                    <span class="info-col w-70">
+                                        Closed
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Make appoint footer section -->
+    <div class="make-appoint-footer">
+        <div class="container">
+            <div class="footer-bar footer__bottom d-flex justify-content-between">
+                <div>
+                    <p>@ 2022 Point S USA. All right reserved.</p>
+                </div>
+
+                <div>
+                    <a href="#" style="margin-right: 20px"><span>Privacy Policy</span></a>
+                    <a href="#"><span>Term of Service</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End make appoint footer section -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="index.js" async defer></script>
+</body>
+
+</html>

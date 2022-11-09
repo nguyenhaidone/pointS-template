@@ -1,0 +1,845 @@
+:root {
+    --container-max-widths-sm: 540px;
+    --container-max-widths-md: 720px;
+    --container-max-widths-lg: 960px;
+    --container-max-widths-xl: 1140px;
+    --xs: 0;
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+}
+
+.header-overview {
+    width: 100%;
+    background-color: #EFEFEF;
+    min-height: 178px;
+    display: flex;
+    align-items: center;
+}
+
+.w-100-fl-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.w-100-fl-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-space-between {
+    justify-content: space-between;
+}
+
+.header-overview-details-wrap-image {
+    width: 110px;
+    height: 110px;
+    border: 3px solid #1D4288;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-overview-details-wrap-title-and-info {
+    width: calc(100% - 150px);
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header-overview-details-wrap-title-and-info-text-title {
+    font-size: 54px;
+    font-weight: 700;
+    font-family: BebasNeue;
+    color: #1D4288;
+    line-height: 48px;
+}
+
+.header-overview-details-wrap-title-and-info-text-subtile {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D4288;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.wrap-body {
+    width: 100%;
+    padding: 32px 0;
+    box-sizing: border-box;
+}
+
+.wrap-list-filter-option {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.filter-option {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #EFEFEF;
+    margin: 8px 0;
+    margin-right: 8px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.text-filter-option {
+    margin: 0 8px;
+    transition: all 0.4s;
+    color: #1A1A1A;
+}
+
+.wrap-border-badge {
+    width: fit-content;
+    height: 140px;
+    border-radius: 11px;
+    border: 1px solid #1D4288;
+    padding: 2px;
+    box-sizing: border-box
+}
+
+.wrap-badge {
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+    background-color: #1D4288;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 16px
+}
+
+.wrap-badge-title {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: BebasNeue;
+    color: #FFFFFF;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.badge-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: BebasNeue;
+    color: #FFFFFF;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.badge-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.featured-tire-title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1D4288
+}
+
+.list-featured-tire-card {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.featured-tire-card {
+    position: relative;
+    min-width: 420px;
+    min-height: 640px;
+}
+
+.featured-tire-card-footer {
+    width: 100%;
+    background-color: #EFEFEF;
+    border: 1px solid #1D4288;
+    min-height: 180px;
+    border-top: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 12px 12px 12px;
+}
+
+.featured-tire-card-footer .pricing {
+    font-size: 48px;
+    font-family: BebasNeue;
+    font-weight: 700;
+    color: #1D4288;
+    text-align: center;
+}
+
+.featured-tire-card-footer .available-data {
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-tire-card-footer .available-data span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1D4288;
+    margin-left: 5px;
+}
+
+.featured-tire-card-footer .mail-in-rebate {
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-tire-card-footer .mail-in-rebate span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff5349;
+    margin-left: 5px;
+}
+
+.featured-tire-card-footer button {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-weight: 700;
+    background-color: #1D4288;
+    width: 100%;
+    border: none;
+    color: white;
+}
+
+.featured-tire-card:hover .featured-tire-card-not-choose {
+    display: none;
+}
+
+.featured-tire-card:hover .featured-tire-card-choose {
+    display: flex;
+}
+
+.featured-tire-card:hover .featured-tire-card-detail {
+    border-radius: 0;
+}
+
+.featured-tire-card-not-choose {
+    display: block;
+    width: 100%;
+    height: 44px;
+}
+
+.featured-tire-card-choose {
+    display: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #3EB049;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #1D4288;
+    border-bottom: none;
+}
+
+.featured-tire-card-choose span {
+    font-family: BebasNeue;
+    color: #fff;
+    margin-left: 9px;
+}
+
+.featured-tire-card-detail {
+    width: 100%;
+    border: 1px solid #1D4288;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.featured-tire-card-detail-overview-option {
+    width: 100%;
+    display: flex;
+}
+
+.featured-tire-card-detail-overview-option-badge {
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.featured-tire-card-detail-overview-option-badge-save {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ff5349;
+    color: white;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+
+.featured-tire-card-detail-overview-option-badge-right {
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+
+.featured-tire-card-detail-overview-option-detail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-tire-card-detail-overview-option-detail img {
+    margin-bottom: 5px;
+    margin-top: 33px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-brand {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-name {
+    font-family: BebasNeue;
+    font-size: 24px;
+    color: #1D4288;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.featured-tire-card-detail-overview-option-detail .tire-type {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D4288;
+    line-height: 20px;
+}
+
+.featured-tire-card-detail-overview-option-detail .warranty-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D4288;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status {
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status img {
+    margin: 0 4px !important;
+}
+
+.featured-tire-card-detail-overview-option-detail .weather-status span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1D4288;
+    line-height: 20px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .rating-number {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .wrap-rating-list-star {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-tire-card-detail-overview-option-detail .wrap-rating .wrap-rating-list-star .star-rating {
+    margin: 0;
+}
+
+.featured-tire-card-detail-overview-option-badge div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.featured-tire-card-detail-overview-option-badge div span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1D4288;
+}
+
+.advertising-badge {
+    width: 100%;
+    margin: 32px 0;
+    background-color: #1D4288;
+    border-radius: 8px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertising-badge .title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 40px;
+    color: white;
+}
+
+.advertising-badge .sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    color: white;
+}
+
+.wrap-list-tire-result {
+    margin-bottom: 32px;
+}
+
+.wrap-list-tire-result .header-options {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-list-tire-result .header-options .filter {
+    min-width: 220px;
+    min-height: 40px;
+    border: 1px solid #1D4288;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.wrap-list-tire-result .header-options .filter span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D4288;
+    margin-right: 4px
+}
+
+.wrap-list-tire-result .list-result {
+    margin-top: 38px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result {
+    width: 100%;
+    min-height: 226px;
+    border: 1px solid #1D4288;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-image {
+    width: 30%;
+    border-right: 1px solid #1D4288;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-right: 1px solid #1D4288;
+    padding: 23px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col .wrap-rating {
+    width: fit-content;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-detail-col .weather-status {
+    margin-top: 9px;
+    width: fit-content;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-pricing {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 0;
+    background-color: #EFEFEF;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.wrap-list-tire-result .list-result .wrap-result .wrap-pricing .featured-tire-card-footer {
+    border: none;
+}
+
+.wrap-more-btn {
+    min-width: 648px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3EB049;
+    color: #fff;
+    font-family: BebasNeue;
+    font-weight: 400;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.wrap-current-tire-specials {
+    width: 100%;
+    min-height: 412px;
+    margin-top: 90px;
+    box-sizing: border-box;
+    padding: 59px;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-current-tire-specials .wrap-title {
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #939598;
+}
+
+.wrap-current-tire-specials .wrap-title .sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1D4288;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.wrap-current-tire-specials .wrap-image {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.wrap-current-tire-specials .wrap-image .img-adv {
+    width: 49%;
+    cursor: pointer;
+}
+
+.wrap-current-tire-specials .wrap-image .img-adv img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wrap-info-detail {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrap-info-detail .wrap-side {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-info-detail .wrap-side img {
+    width: 100%;
+}
+
+.wrap-info-detail .wrap-side .big-title {
+    max-width: 536px;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.wrap-info-detail .wrap-side .big-title span {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1D4288;
+    line-height: 54px;
+}
+
+.wrap-info-detail .wrap-side .big-title .underline {
+    width: 200px;
+    border: 2px solid #3EB049;
+}
+
+.wrap-info-detail .wrap-side .info-detail {
+    width: 536px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.wrap-info-detail .wrap-side .info-detail .big-title {
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    color: #1D4288;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    font-family: BebasNeue;
+}
+
+.wrap-info-detail .wrap-side .info-detail .wrap-information {
+    min-width: 532px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrap-info-detail .wrap-side .info-detail .wrap-information .info-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info-right-col {
+    align-items: flex-start !important;
+}
+
+.info-left-col {
+    align-items: flex-start;
+}
+
+.wrap-info-detail .wrap-side .info-detail .wrap-information .phone-info {
+    font-size: 18px;
+    color: #1D4288;
+    font-weight: 700;
+}
+
+.wrap-info-detail .wrap-side .info-detail .wrap-information span,
+a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D4288 !important;
+}
+
+.after-hours-services {
+    font-size: 12px !important;
+}
+
+.mt-18 {
+    margin-top: 18px
+}
+
+.mt-9 {
+    margin-top: 9px
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.wrap-info-detail .wrap-side .info-detail .wrap-information .info-left-col {
+    width: 200px;
+}
+
+.blur-text {
+    font-weight: 400;
+    color: #1D4288;
+    font-size: 14px;
+    opacity: 0.35;
+}
+
+.display-without-opacity {
+    opacity: 1;
+    font-weight: 700 !important;
+}
+
+.side-bar {
+    position: fixed;
+    min-width: 550px;
+    height: 100%;
+    background-color: #EFEFEF;
+    z-index: 9999;
+    right: -550px;
+    transition: all 0.5s ease;
+    /* transition: all 0.5s ease-in-out; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.display-side-bar {
+    transform: translate(-100%, 0) !important;
+}
+
+.header-side-bar {
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: BebasNeue;
+    color: #1D4288
+}
+
+.overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#close-filter-btn {
+    cursor: pointer;
+}
+
+.wrap-side-bar-filter-option {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.wrap-side-bar-filter-option-title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: BebasNeue;
+    color: #1D4288
+}
+
+.filter-icon {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.filter-icon-rotate {
+    transform: rotate(180deg);
+}
+
+.need-it-by-filter-option {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease .15s;
+}
+
+.filter-display {
+    opacity: 1;
+    height: 150px;
+}
+
+.cursor-circle {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #1D4288;
+    border-radius: 50%;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: e-resize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-circle .green-point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3EB049;
+}

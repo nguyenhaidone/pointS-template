@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./../styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="./../components/make-appoint-footer/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../components/make-appoint-header/index.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./../components/loginSidebar/index.css" />
+  </head>
+  <body>
+    <!-- Make appoint header section -->
+    <div class="make-appoint-header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <section class="left-section d-flex">
+          <div class="icon-wrapper">
+            <img src="./../assets/Group 26.svg" height="48" width="183" />
+          </div>
+        </section>
+
+        <section class="right-section">
+          <div class="controller-wrapper d-flex">
+            <span><a href="#">Need help?</a> Call shop at 503-244-9912</span>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- End make appoint header section -->
+
+    <div class="tire-finder-main">
+      <div class="container">
+        <div class="btn-back-appointment">
+          <img src="./../assets/arrow-left.svg" />Find the Tires for Your
+          Vehicle
+          <!-- Appointment Confirmed! -->
+        </div>
+
+        <div class="choose-tire-by">
+          I prefer to shop <a href="#">By Size</a> <a href="#">By Brand</a>
+        </div>
+        <div class="d-flex">
+          <!-- Left section -->
+          <div class="left-section">
+            <!-- Step 1 -->
+            <div id="step-1">
+              <div class="step-heading" style="margin-top: 8px">
+                <h3>Tell us what kind of vehicle you drive.</h3>
+              </div>
+
+              <div class="step-content">
+                <div class="step-content-section">
+                  <div class="list-makes-wrapper">
+                    <div class="list-makes" id="list-makes"></div>
+
+                    <button id="see-more-makes-btn">
+                      See More Makes <img src="/assets/arrow-down.svg" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="step-2" style="display: none">
+              <div class="step-heading" style="margin-top: 8px">
+                <h3 id="step-2-heading">
+                  Next, what’s the year of your Toyota?
+                </h3>
+              </div>
+
+              <div class="step-content">
+                <div class="step-content-section">
+                  <div class="list-makes-wrapper horizontal-makes">
+                    <div class="list-makes" id="selected-make-2"></div>
+                  </div>
+
+                  <div class="input-picker">
+                    <label for="year" class="form-label">Year*</label>
+
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="year"
+                        id="year"
+                        required
+                      />
+
+                      <div class="input-icon-prefix">
+                        <img
+                          src="./../assets/icons/close.svg"
+                          id="year-close-icon"
+                          style="display: none"
+                        />
+                        <img
+                          src="./../assets/icons/search.svg"
+                          id="year-search-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="year-list item-list" id="year-list"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="step-3" style="display: none">
+              <div class="step-heading" style="margin-top: 8px">
+                <h3 id="step-3-heading">
+                  Next, what’s the model of your Toyota?
+                </h3>
+              </div>
+
+              <div class="step-content">
+                <div class="step-content-section">
+                  <div class="list-makes-wrapper horizontal-makes">
+                    <div class="list-makes" id="selected-make-3"></div>
+                  </div>
+
+                  <div class="input-picker">
+                    <label for="model" class="form-label">Model*</label>
+
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="model"
+                        id="model"
+                        required
+                      />
+
+                      <div class="input-icon-prefix">
+                        <img
+                          src="./../assets/icons/close.svg"
+                          id="model-close-icon"
+                          style="display: none"
+                        />
+                        <img
+                          src="./../assets/icons/search.svg"
+                          id="model-search-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="model-list item-list" id="model-list"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div id="step-4" style="display: none">
+              <div class="step-heading" style="margin-top: 8px">
+                <h3>Lastly, do know which your vehicle trim?</h3>
+              </div>
+
+              <div class="step-content">
+                <div class="step-content-section">
+                  <div class="list-makes-wrapper horizontal-makes">
+                    <div class="list-makes" id="selected-make-4"></div>
+                  </div>
+
+                  <div class="tire-size-advises">
+                    <h6>Original Tire Sizes</h6>
+                    <p>
+                      Cras mattis consectetur purus sit amet fermentum. Morbi
+                      leo risus, porta ac.
+                    </p>
+                    <b
+                      ><img src="./../assets/icons/question-mark.svg" />Where to
+                      find my tire size?</b
+                    >
+                  </div>
+
+                  <div class="input-picker">
+                    <label for="trim" class="form-label">Trim/Submodel*</label>
+
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="trim"
+                        id="trim"
+                        required
+                      />
+
+                      <div class="input-icon-prefix">
+                        <img
+                          src="./../assets/icons/close.svg"
+                          id="trim-close-icon"
+                          style="display: none"
+                        />
+                        <img
+                          src="./../assets/icons/search.svg"
+                          id="trim-search-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trim-list item-list" id="trim-list"></div>
+
+                  <p class="noted-text">
+                    For modified or lifted tires <a href="#">Shop by Size</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right section -->
+          <div class="right-section">
+            <div class="appointmet-billing">
+              <div class="appointment-billing-banner">
+                <div class="appointment-billing-matches">--</div>
+                <h3>Tire Matches</h3>
+              </div>
+
+              <button class="appointment-billing-button">
+                Name, PointS Tire Specialist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Make appoint footer section -->
+    <div class="make-appoint-footer">
+      <div class="container">
+        <div class="footer-bar footer__bottom d-flex justify-content-between">
+          <div>
+            <p>@ 2022 Point S USA. All right reserved.</p>
+          </div>
+
+          <div>
+            <a href="#" style="margin-right: 20px"
+              ><span>Privacy Policy</span></a
+            >
+            <a href="#"><span>Term of Service</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End make appoint footer section -->
+
+    <div class="login-sidebar" id="login-sidebar">
+      <div class="d-flex flex-column position-relative">
+        <h3>Log into your garage</h3>
+
+        <div class="form-wrapper">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address*</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email-login"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password*</label>
+              <input
+                type="password"
+                name="pasword"
+                class="form-control"
+                id="password-login"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="text-end">
+              <a class="forgot-text" href="#">Forgot Password?</a>
+            </div>
+            <div class="form-group form-check">
+              <input
+                name="keepLogin"
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Keep me logged in</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-login-btn">
+              log in
+            </button>
+          </form>
+        </div>
+
+        <p class="description">
+          Don’t have an account yet? <a href="#">Create an account</a>
+        </p>
+
+        <img
+          class="close-icon"
+          src="./../assets/close-icon-blue.svg"
+          id="close-icon"
+        />
+      </div>
+    </div>
+
+    <div class="backdrop" id="backdrop"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+          customClass: 'tooltip-container',
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./../../styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="./../../components/make-appoint-footer/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../../components/make-appoint-header/index.css"
+    />
+    <link rel="stylesheet" href="./../index.css" />
+  </head>
+  <body>
+    <!-- Make appoint header section -->
+    <div class="make-appoint-header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <section class="left-section d-flex">
+          <div class="icon-wrapper">
+            <img src="./../../assets/Group 26.svg" height="48" width="183" />
+          </div>
+        </section>
+
+        <section class="right-section">
+          <div class="controller-wrapper d-flex">
+            <span><a href="#">Need help?</a> Call shop at 503-244-9912</span>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- End make appoint header section -->
+
+    <div class="tire-finder-main tire-finder-size" id="tire-finder-size">
+      <div class="container">
+        <div class="btn-back-appointment">
+          <img src="./../../assets/arrow-left.svg" />Find the Tires for Your
+          Vehicle
+          <!-- Appointment Confirmed! -->
+        </div>
+
+        <div class="choose-tire-by">
+          I prefer to shop <a href="#">By Size</a> <a href="#">By Brand</a>
+        </div>
+
+        <div class="choose-tire-content">
+          <div class="step-heading" style="margin-top: 8px">
+            <h3>Browse by Tire Size</h3>
+          </div>
+
+          <div class="step-content">
+            <div class="step-content-section">
+              <div class="row justify-content-center flex-nowrap">
+                <div class="col size-selector-section">
+                  <!-- Overview -->
+                  <div class="tire-overview">
+                    <img src="./../../assets/find-tire-size.svg" />
+                    <div class="tire-selection" id="front-tire-selection">
+                      <span>-</span>
+                      <span>-</span>
+                      <span>-</span>
+                      <span>/</span>
+                      <span>-</span>
+                      <span>-</span>
+                      <span>R</span>
+                      <span>-</span>
+                      <span>-</span>
+                    </div>
+                  </div>
+
+                  <div class="tire-title" style="display: none">
+                    <h3>FRONT TIRES</h3>
+                  </div>
+
+                  <!-- Form -->
+                  <div class="tire-form">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="front-width" class="form-label"
+                              >Width*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="front-width"
+                                id="front-tire-width"
+                                autocomplete="off"
+                                required
+                              />
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  class="close-icon"
+                                  id="front-tire-width-close"
+                                  style="display: none"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="front-tire-width-dropdown"
+                                style="display: none"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="front-ratio" class="form-label"
+                              >Ratio*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="front-ratio"
+                                id="front-tire-ratio"
+                                autocomplete="off"
+                                required
+                              />
+
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  class="close-icon"
+                                  id="front-tire-ratio-close"
+                                  style="display: none"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="front-tire-ratio-dropdown"
+                                style="display: none"
+                              >
+                                <div class="list-items">
+                                  <div class="item selected">205</div>
+                                  <div class="item">215</div>
+                                  <div class="item">235</div>
+                                  <div class="item">245</div>
+                                  <div class="item">255</div>
+                                  <div class="item">275</div>
+                                  <div class="item">295</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="front-rim" class="form-label"
+                              >Rim Size*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="front-rim"
+                                id="front-tire-rim"
+                                autocomplete="off"
+                                required
+                              />
+
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  class="close-icon"
+                                  id="front-tire-rim-close"
+                                  style="display: none"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="front-tire-rim-dropdown"
+                                style="display: none"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="col size-selector-section"
+                  id="rear-tire-section"
+                  style="display: none"
+                >
+                  <!-- Overview -->
+                  <div class="tire-overview">
+                    <img src="./../../assets/find-tire-size.svg" />
+                    <div class="tire-selection" id="rear-tire-selection">
+                      <span>-</span>
+                      <span>-</span>
+                      <span>-</span>
+                      <span>/</span>
+                      <span>-</span>
+                      <span>-</span>
+                      <span>R</span>
+                      <span>-</span>
+                      <span>-</span>
+                    </div>
+                  </div>
+
+                  <div class="tire-title">
+                    <h3>REAR TIRES</h3>
+                    <span id="remove-rear-btn">Remove</span>
+                  </div>
+
+                  <!-- Form -->
+                  <div class="tire-form">
+                    <form>
+                      <div class="row">
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="rear-width" class="form-label"
+                              >Width*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="rear-width"
+                                id="rear-tire-width"
+                                autocomplete="off"
+                                required
+                              />
+
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  id="rear-tire-width-close"
+                                  class="close-icon"
+                                  style="display: none"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="rear-tire-width-dropdown"
+                                style="display: none"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="rear-ratio" class="form-label"
+                              >Ratio*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="rear-ratio"
+                                id="rear-tire-ratio"
+                                required
+                              />
+
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  id="rear-tire-ratio-close"
+                                  class="close-icon"
+                                  style="display: none"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="rear-tire-ratio-dropdown"
+                                style="display: none"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="input-picker">
+                            <label for="rear-rim" class="form-label"
+                              >Rim Size*</label
+                            >
+
+                            <div class="position-relative">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="rear-rim"
+                                id="rear-tire-rim"
+                                required
+                              />
+
+                              <div class="input-icon-prefix">
+                                <img
+                                  src="./../../assets/icons/close.svg"
+                                  id="rear-tire-rim-close"
+                                  style="display: none"
+                                  class="close-icon"
+                                />
+                                <img
+                                  src="./../../assets/icons/search.svg"
+                                  class="search-icon"
+                                />
+                              </div>
+
+                              <div
+                                class="input-dropdown"
+                                id="rear-tire-rim-dropdown"
+                                style="display: none"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-footer">
+            <div class="d-flex justify-content-center flex-direction-column">
+              <div class="size-selector-section">
+                <button id="add-rear-btn">+ Add rear tire size</button>
+                <button class="active" id="see-result-btn">See Results</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Make appoint footer section -->
+    <div class="make-appoint-footer">
+      <div class="container">
+        <div class="footer-bar footer__bottom d-flex justify-content-between">
+          <div>
+            <p>@ 2022 Point S USA. All right reserved.</p>
+          </div>
+
+          <div>
+            <a href="#" style="margin-right: 20px"
+              ><span>Privacy Policy</span></a
+            >
+            <a href="#"><span>Term of Service</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End make appoint footer section -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+          customClass: 'tooltip-container',
+        });
+      });
+    </script>
+  </body>
+</html>
